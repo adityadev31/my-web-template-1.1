@@ -1,0 +1,205 @@
+
+/*.....PRELOADER.....*/
+
+#loading{
+    width: 100%;
+    height: 100vh;
+    background: url("img/white_back.jpg"), url('img/preloader_back_img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box{
+    width: 70px;
+    height: 110px;
+    position: relative;
+    transform: rotate(180deg);
+    padding-top: 40px;
+}
+.bars{
+    background: rgba(0, 0, 0, 0.61);
+    height: 65%;
+    width: 10px;
+    transition: ease-in-out all;
+    border-radius: 0px 0px 8px 8px ;
+    position: absolute;
+}
+
+
+#loading h1{
+    font-size: 40px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 3px;
+    color: #000;
+    position: absolute;
+    top: 58%;
+    left: calc(50% - 85px);
+    animation: blinking 5s infinite;
+}
+@keyframes blinking{
+    0%{ opacity: 0;}
+    20%{ opacity: 0.25;}
+    40%{ opacity: 0.5;}
+    60%{ opacity: 0.6;}
+    70%{ opacity: 0.5;}
+    80%{ opacity: 0.25;}
+    100%{ opacity: 0;}
+}
+#loading-2{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+}
+
+
+.bar-1{
+    animation: bar1 2s infinite;
+    right: 0;
+}
+.bar-2{
+    animation: bar2 2s infinite;
+    right: 15px;
+}
+.bar-3{
+    animation: bar3 2s infinite;
+    right: 30px;
+}
+.bar-4{
+    animation: bar4 2s infinite;
+    right: 45px;
+}
+.bar-5{
+    animation: bar5 2s infinite;
+    right: 60px;
+}
+@keyframes bar1{
+    0%{ height: 10%; }
+    5%{ height: 12%; }
+    10%{ height: 15%; }
+    15%{ height: 17%; }
+    20%{ height: 20%; }
+    25%{ height: 22%; }
+    30%{ height: 25%; }
+    35%{ height: 27%; }
+    40%{ height: 30%; }
+    45%{ height: 32%; }
+    50%{ height: 35%; }
+    55%{ height: 32%; }
+    60%{ height: 30%; }
+    65%{ height: 27%; }
+    70%{ height: 25%; }
+    75%{ height: 22%; }
+    80%{ height: 20%; }
+    85%{ height: 17%; }
+    90%{ height: 15%; }
+    95%{ height: 12%; }
+    100%{ height: 10%; }
+}
+
+
+@keyframes bar2{
+    0%{ height: 10%; }
+    5%{ height: 15%; }
+    10%{ height: 20%; }
+    15%{ height: 25%; }
+    20%{ height: 30%; }
+    25%{ height: 35%; }
+    30%{ height: 40%; }
+    35%{ height: 45%; }
+    40%{ height: 50%; }
+    45%{ height: 55%; }
+    50%{ height: 60%; }
+    55%{ height: 65%; }
+    60%{ height: 60%; }
+    65%{ height: 55%; }
+    70%{ height: 50%; }
+    75%{ height: 45%; }
+    80%{ height: 40%; }
+    85%{ height: 35%; }
+    90%{ height: 30%; }
+    95%{ height: 25%; }
+    98%{ height: 15%; }
+    100%{ height: 10%; }
+}
+
+@keyframes bar3{
+    0%{ height: 55%; }
+    5%{ height: 60%; }
+    10%{ height: 65%; }
+    15%{ height: 60%; }
+    20%{ height: 55%; }
+    25%{ height: 50%; }
+    30%{ height: 45%; }
+    35%{ height: 40%; }
+    40%{ height: 35%; }
+    45%{ height: 30%; }
+    50%{ height: 25%; }
+    55%{ height: 20%; }
+    60%{ height: 15%; }
+    65%{ height: 20%; }
+    70%{ height: 25%; }
+    75%{ height: 30%; }
+    80%{ height: 35%; }
+    85%{ height: 40%; }
+    90%{ height: 45%; }
+    95%{ height: 50%; }
+    100%{ height: 55%; }
+}
+
+@keyframes bar4{
+    0%{ height: 40%; }
+    5%{ height: 45%; }
+    10%{ height: 50%; }
+    15%{ height: 55%; }
+    20%{ height: 60%; }
+    25%{ height: 65%; }
+    30%{ height: 60%; }
+    35%{ height: 55%; }
+    40%{ height: 50%; }
+    45%{ height: 45%; }
+    50%{ height: 40%; }
+    55%{ height: 35%; }
+    60%{ height: 30%; }
+    65%{ height: 25%; }
+    70%{ height: 20%; }
+    75%{ height: 15%; }
+    80%{ height: 20%; }
+    85%{ height: 25%; }
+    90%{ height: 30%; }
+    95%{ height: 35%; }
+    100%{ height: 40%; }
+}
+
+@keyframes bar5{
+    0%{ height: 20%; }
+    5%{ height: 21%; }
+    10%{ height: 22%; }
+    15%{ height: 23%; }
+    20%{ height: 24%; }
+    25%{ height: 25%; }
+    30%{ height: 26%; }
+    35%{ height: 27%; }
+    40%{ height: 28%; }
+    45%{ height: 29%; }
+    50%{ height: 30%; }
+    55%{ height: 29%; }
+    60%{ height: 28%; }
+    65%{ height: 27%; }
+    70%{ height: 26%; }
+    75%{ height: 25%; }
+    80%{ height: 24%; }
+    85%{ height: 23%; }
+    90%{ height: 22%; }
+    95%{ height: 21%; }
+    100%{ height: 20%; }
+}
+
+

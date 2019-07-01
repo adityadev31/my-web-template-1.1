@@ -25,6 +25,7 @@
 
     <!-- .......PRELOADER...... -->
     <div id="loading"><h1>Loading...</h1></div>
+    <div id="loading-2"></div>
 
 
 
@@ -303,9 +304,11 @@
 
     <script>
         var preloader = document.getElementById('loading');
+        var preloader2 = document.getElementById('loading-2');
         var navig = document.getElementById('navigation');
         function myFunction(){
             preloader.style.display = 'none';
+            preloader2.style.display = 'none';
             navig.classList.toggle('navigator');       // toggling class navigation to navigator for making nav invisible for  preloader
         }
 
